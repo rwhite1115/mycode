@@ -25,6 +25,6 @@ print(reversed_list)
 print()
 
 print("Now using the FOR loop to maneuver the entire list")
-for my_item in reverse_list:
+for my_item in reversed_list:
 	print(my_item)       #This will print the reversed list vertically
 # END of the FOR loop
