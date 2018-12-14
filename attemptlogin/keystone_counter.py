@@ -14,12 +14,12 @@ for i in range(len(keystone_file_lines)):
     if "- - - - -] Authorization failed" in keystone_file_lines[i]:    
      loginfail += 1 #this is the same as loginfail = loginfail + 1
 print('The number of failed login attempts is ' + str(loginfail))
-####
+
 for i in range(len(keystone_file_lines)):
     if "- - - - -] Authorization failed" in keystone_file_lines[i]:
      FAILIP.append(keystone_file_lines[i])
 print("The IP address associated with the failed login is") 
-#####
+
 for x in range(len(FAILIP)):
      print(FAILIP[x].split("from", 1)[1])
 
